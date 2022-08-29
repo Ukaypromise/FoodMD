@@ -3,6 +3,7 @@ body {
 }
 
 .header {
+  height: 70px;
   display: flex;
   justify-content: space-evenly;
   font-size: 2rem;
@@ -11,6 +12,14 @@ body {
 .header a {
   text-decoration: none;
   color: black;
+}
+.conatiner {
+    width: 80vh;
+    background-color: salmon;
+}
+
+.logo{
+  width: 100px;
 }
 
 footer {
