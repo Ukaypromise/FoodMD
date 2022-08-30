@@ -1,3 +1,54 @@
 body {
-  background-color: aqua;
+  background-color: rgb(243, 232, 159);
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+header img {
+  height: 70px;
+  padding: 0;
+}
+
+.container {
+  height: 90vh;
+  background-color: salmon;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#food-items {
+  display: grid;
+  grid-template-columns: 300px 300px 30px;
+  margin-inline: 20%;
+}
+
+.meal img {
+  width: 180px;
+}
+
+.meal h3 {
+  width: 150px;
+}
+
+footer {
+  height: 70px;
+  border: 1.5px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
 }
