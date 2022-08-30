@@ -13,7 +13,6 @@ const fetchFucntion = () => {
       `;
       foodDiv.innerHTML = foodInfo;
       foodItemsDiv.appendChild(foodDiv);
-      
     });
   };
 
