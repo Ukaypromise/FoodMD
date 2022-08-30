@@ -20,8 +20,8 @@ header img {
 }
 
 .container {
-    height: 86vh;
-    background-color: salmon;
+  height: 90vh;
+  background-color: salmon;
 }
 
 #food-items {
@@ -30,16 +30,16 @@ header img {
   margin-inline: 20%;
 }
 
-.meal img{
-  width: 280px;
+.meal img {
+  width: 180px;
 }
 
 .meal h3 {
-  width: 280px;
+  width: 150px;
 }
 
 footer {
-  height: 7vh;
+  height: 70px;
   border: 1.5px solid black;
   color: black;
   display: flex;
