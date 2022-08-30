@@ -24,6 +24,12 @@ header img {
   background-color: salmon;
 }
 
+h1{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
 #food-items {
   display: grid;
   grid-template-columns: 300px 300px 30px;
