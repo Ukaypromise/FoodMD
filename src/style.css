@@ -67,5 +67,72 @@ footer {
   padding-left: 2rem;
 }
 
+/* Modal */
+.modal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    color: #fff;
+    background: var(--tenne-tawny);
+    border-radius: 1rem;
+    width: 60%;
+    height: 60%;
+    overflow-y: scroll;
+    /* display: none; */
+    padding: 2rem 0;
+}
+.modal-details::-webkit-scrollbar{
+    width: 10px;
+}
+.modal-details::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+}
+
+
+/* js related */
+.showModal{
+    display: block;
+}
+
+.modal-details-content{
+    margin: 2rem;
+}
+
+.modal-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: #fff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.modal-title{
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.modal-meal-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.item-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7rem;
+}
 
 
