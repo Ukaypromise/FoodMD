@@ -26,7 +26,7 @@ import getMeals from './category';
 // })
 //   .then((response) => response.json())
 //   .then((json) => console.log(json));
-(function(){
+const fetchFucntion = ()=>{
 
   fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=e')
   .then(res=>res.json())
@@ -51,4 +51,6 @@ import getMeals from './category';
   });
   }
   
-  })();
+  }
+
+  fetchFucntion();
