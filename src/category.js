@@ -7,13 +7,13 @@ const fetchFucntion = () => {
 
       foodDiv.className = 'meal';
       const foodInfo = `
-      <h3>${meal.strMeal}</h3>
+      <p>${meal.strMeal}</p>
       <img src='${meal.strMealThumb}'>
-      <p>${meal.strCategory} </p>
-
+      <p>${meal.strCategory}</p>
       `;
       foodDiv.innerHTML = foodInfo;
       foodItemsDiv.appendChild(foodDiv);
+      
     });
   };
 
