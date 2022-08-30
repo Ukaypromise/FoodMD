@@ -13,13 +13,29 @@ body {
   text-decoration: none;
   color: black;
 }
-.conatiner {
-    width: 80vh;
+
+header img {
+  height: 70px;
+  padding: 0;
+}
+
+.container {
+    height: 86vh;
     background-color: salmon;
 }
 
-.logo{
-  width: 100px;
+#food-items {
+  display: grid;
+  grid-template-columns: 300px 300px 30px;
+  margin-inline: 20%;
+}
+
+.meal img{
+  width: 280px;
+}
+
+.meal h3 {
+  width: 280px;
 }
 
 footer {
