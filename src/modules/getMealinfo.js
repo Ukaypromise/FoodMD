@@ -20,7 +20,6 @@ function getMealInfo(e) {
     addLike(foodNum);
   }
 
-
   if (e.target.classList.contains('comment-btn')) {
     const mealItem = e.target.parentElement.parentElement;
     fetch(
