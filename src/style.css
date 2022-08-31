@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   font-size: 2rem;
+  align-items: center;
 }
 
 .header a {
@@ -26,7 +27,7 @@ header img {
 }
 
 .container {
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
   background-color: gray;
   display: flex;
@@ -35,8 +36,8 @@ header img {
 
 h1 {
   font-size: 2rem;
-  text-align: center;
   margin-top: 5px;
+  justify-self: center;
 }
 
 .meal {
@@ -56,13 +57,14 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 330px;
   background-color: whitesmoke;
 }
 
 .meal-img img {
-  width: 160px;
+  width: 250px;
   display: block;
+  border: 2px solid black;
 }
 
 .meal-name {
@@ -71,6 +73,12 @@ h1 {
 
 .meal-name p {
   font-size: 1rem;
+}
+
+.comment-btn {
+  margin-top: 2rem;
+  padding: .5rem .9rem;
+  border-radius: 8px;
 }
 
 footer {
