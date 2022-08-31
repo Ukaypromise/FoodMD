@@ -9,10 +9,12 @@ body {
 }
 
 .header {
-  height: 70px;
+  height: 85px;
   display: flex;
   justify-content: space-evenly;
   font-size: 2rem;
+  align-items: center;
+  margin-bottom: 0.9rem;
 }
 
 .header a {
@@ -21,22 +23,24 @@ body {
 }
 
 header img {
-  height: 70px;
+  height: 80px;
   padding: 0;
 }
 
 .container {
-  height: 90vh;
-  width: 100vw;
+  height: 85vh;
+  width: 90vw;
   background-color: gray;
   display: flex;
   gap: 2rem;
+  margin-inline: 5vw;
+  border-radius: 10px;
 }
 
 h1 {
   font-size: 2rem;
-  text-align: center;
   margin-top: 5px;
+  justify-self: center;
 }
 
 .meal {
@@ -56,13 +60,14 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 330px;
   background-color: whitesmoke;
 }
 
 .meal-img img {
-  width: 160px;
+  width: 250px;
   display: block;
+  border: 2px solid black;
 }
 
 .meal-name {
@@ -73,13 +78,27 @@ h1 {
   font-size: 1rem;
 }
 
+.involvement p {
+  margin-top: 7px;
+}
+
+.comment-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+}
+
 footer {
   height: 70px;
+  width: 99vw;
   border: 1.5px solid black;
+  border-radius: 5px;
   color: black;
   display: flex;
   align-items: center;
   padding-left: 2rem;
+  margin-top: 1rem;
+  margin-inline: 0.5vw;
 }
 
 /* Modal */

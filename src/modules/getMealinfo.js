@@ -1,3 +1,4 @@
+import { addLike } from './involvement.js';
 import mealInfoModal from './mealInfoModal.js';
 
 const modalDetailsContent = document.querySelector('.modal-details-content');
@@ -10,6 +11,15 @@ recipeCloseBtn.addEventListener('click', () => {
 // get the meal
 function getMealInfo(e) {
   e.preventDefault();
+
+  // if the like button was pressed
+
+  if (/like-/.test(e.target.id)) {
+    const { id } = e.target;
+    const foodNum = id.match(/\d+$/)[0];
+    addLike(foodNum);
+  }
+
   if (e.target.classList.contains('comment-btn')) {
     const mealItem = e.target.parentElement.parentElement;
     fetch(
