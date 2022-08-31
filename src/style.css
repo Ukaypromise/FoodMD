@@ -111,10 +111,10 @@ footer {
   background: slategray;
   border-radius: 1rem;
   width: 60%;
-  height: 60%;
+  height: 90%;
   overflow-y: scroll;
   display: none;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .modal-details::-webkit-scrollbar {
@@ -170,4 +170,36 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: 0 7rem;
+}
+
+/* Comment Section */
+.add-comment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.comment-submit {
+  margin-top: 2rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
 }

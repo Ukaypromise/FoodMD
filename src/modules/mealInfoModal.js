@@ -24,6 +24,16 @@ function mealInfoModal(meal) {
                 <p>${strMeasure1}</p>
               </div>
             </div>
+            <div class="comment">
+              <h3 class="modal-title">Comments</h3>
+              <p class="modal-title">3/4/2022 Promise: I love this</p>
+            </div>
+            <div class="add-comment">
+              <h3>Add a comment</h3>
+              <input type="text" class="input-name">
+              <textarea name="comment" id="comment-text" cols="30" rows="2"></textarea>
+              <button class = 'comment-submit'>Comment</button>
+            </div>
     `;
   modalDetailsContent.innerHTML = html;
   modalDetailsContent.parentElement.classList.add('showModal');
