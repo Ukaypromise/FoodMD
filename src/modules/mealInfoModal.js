@@ -1,9 +1,7 @@
-
-const modalDetailsContent = document.querySelector(".modal-details-content");
+const modalDetailsContent = document.querySelector('.modal-details-content');
 function mealInfoModal(meal) {
-  console.log(meal);
   meal = meal[0];
-  let html = `
+  const html = `
         <div class="modal-meal-img">
               <img src="${meal.strMealThumb}" alt="" />
             </div>
@@ -20,7 +18,7 @@ function mealInfoModal(meal) {
             </div>
     `;
   modalDetailsContent.innerHTML = html;
-  modalDetailsContent.parentElement.classList.add("showModal");
+  modalDetailsContent.parentElement.classList.add('showModal');
 }
 
 export default mealInfoModal;

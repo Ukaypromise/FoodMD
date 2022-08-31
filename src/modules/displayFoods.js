@@ -1,14 +1,15 @@
-import getMealInfo from "./getMealinfo.js";
-const foodItemsDiv = document.getElementById("food-items");
+import getMealInfo from './getMealinfo.js';
+
+const foodItemsDiv = document.getElementById('food-items');
 
 // event listeners
-foodItemsDiv.addEventListener("click", getMealInfo);
+foodItemsDiv.addEventListener('click', getMealInfo);
 
 const displayFoods = () => {
-  fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=e")
+  fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=e')
     .then((res) => res.json())
     .then((data) => {
-      let html = "";
+      let html = '';
       data.meals.forEach((meal) => {
         html += `
       <div class="meal-item" data-id = "${meal.idMeal}"> 

@@ -39,7 +39,6 @@ h1 {
   margin-top: 5px;
 }
 
-
 .meal {
   padding: 1rem;
   margin: 1rem auto;
@@ -60,13 +59,16 @@ h1 {
   width: 300px;
   background-color: whitesmoke;
 }
+
 .meal-img img {
   width: 160px;
   display: block;
 }
+
 .meal-name {
   padding: 1rem 0.5rem;
 }
+
 .meal-name p {
   font-size: 1rem;
 }
@@ -87,7 +89,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  background:slategray;
+  background: slategray;
   border-radius: 1rem;
   width: 60%;
   height: 60%;
@@ -95,9 +97,11 @@ footer {
   display: none;
   padding: 2rem 0;
 }
+
 .modal-details::-webkit-scrollbar {
   width: 10px;
 }
+
 .modal-details::-webkit-scrollbar-thumb {
   background: #f0f0f0;
   border-radius: 2rem;
@@ -127,6 +131,7 @@ footer {
   justify-content: center;
   opacity: 0.9;
 }
+
 .modal-title {
   letter-spacing: 1px;
   padding-bottom: 1rem;
@@ -140,6 +145,7 @@ footer {
   margin: 0 auto;
   display: block;
 }
+
 .item-details {
   display: flex;
   justify-content: space-between;
