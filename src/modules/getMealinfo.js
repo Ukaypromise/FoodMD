@@ -1,4 +1,3 @@
-import displayFoods from './displayFoods.js';
 import { addLike } from './involvement.js';
 import mealInfoModal from './mealInfoModal.js';
 
@@ -16,11 +15,11 @@ function getMealInfo(e) {
   // if the like button was pressed
 
   if (/like-/.test(e.target.id)) {
-    const id = e.target.id;
+    const { id } = e.target;
     const foodNum = id.match(/\d+$/)[0];
     addLike(foodNum);
   }
-  displayFoods();
+
 
   if (e.target.classList.contains('comment-btn')) {
     const mealItem = e.target.parentElement.parentElement;

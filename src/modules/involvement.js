@@ -17,6 +17,7 @@ const addLike = async (id) => {
     body,
     headers,
   });
+  result();
 };
 
 export { getLikes, addLike };
