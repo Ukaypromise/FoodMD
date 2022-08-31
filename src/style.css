@@ -14,7 +14,7 @@ body {
   justify-content: space-evenly;
   font-size: 2rem;
   align-items: center;
-  margin-bottom: .9rem;
+  margin-bottom: 0.9rem;
 }
 
 .header a {
@@ -77,13 +77,14 @@ h1 {
 .meal-name p {
   font-size: 1rem;
 }
+
 .involvement p {
   margin-top: 7px;
 }
 
 .comment-btn {
   margin-top: 2rem;
-  padding: .5rem .9rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 8px;
 }
 
@@ -97,7 +98,7 @@ footer {
   align-items: center;
   padding-left: 2rem;
   margin-top: 1rem;
-  margin-inline: .5vw;
+  margin-inline: 0.5vw;
 }
 
 /* Modal */

@@ -1,12 +1,11 @@
-import displayFoods from "./displayFoods";
+// import displayFoods from './displayFoods.js';
 
-let url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/'
-let key = '4ZfW9Nw9KyQJZ8SztYPH';
+const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
+const key = '4ZfW9Nw9KyQJZ8SztYPH';
 
 const getLikes = async () => {
   const result = await fetch(`${url}${key}/likes`);
   const data = await result.json();
-  console.log(data);
   return data;
 };
 
@@ -18,10 +17,6 @@ const addLike = async (id) => {
     body,
     headers,
   });
-  console.log(result);
-  // location.reload()
-  displayFoods();
 };
-
 
 export { getLikes, addLike };
