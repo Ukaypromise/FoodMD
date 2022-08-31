@@ -1,5 +1,4 @@
 import './style.css';
-// import image from './foodCode.png';
-import fetchFucntion from './category.js';
+import displayFoods from './modules/displayFoods.js';
 
-fetchFucntion();
+displayFoods();

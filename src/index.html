@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <title>The Lunch Box</title>
   </head>
   <body>
@@ -15,9 +21,38 @@
     </header>
     <main>
       <section>
-        <h1 class="testfour">Menu</h1>        
+        <h1 class="testfour">Menu List</h1>
         <div class="container">
-          <div id="food-items"></div>
+          <div class="meal" id="food-items"></div>
+        </div>
+        <!-- Modal -->
+        <div class="modal-details">
+          <!-- Modal close btn -->
+          <button
+            type="button"
+            class="btn modal-close-btn"
+            id="modal-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+
+          <!-- Modal content -->
+          <div class="modal-details-content">
+            <!-- <div class="modal-meal-img">
+              <img src="./foodCode.png" alt="" />
+            </div>
+            <h2 class="modal-title">Rice and Beans</h2>
+            <div class="item-details">
+              <div>
+                <p>Fuel titanium</p>
+                <p>Fuel titanium</p>
+              </div>
+              <div>
+                <p>Fuel titanium</p>
+                <p>Fuel titanium</p>
+              </div>
+            </div> -->
+          </div>
         </div>
       </section>
     </main>
