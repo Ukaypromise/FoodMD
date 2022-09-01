@@ -31,11 +31,12 @@ function mealInfoModal(meal) {
             </div>
             <h2 id="commentTitle">Comments</h2>
             <div id="commentsDisplay"></div>
-            <h2 id="plusComment>Add a comment ${idMeal}</h2>
+            <h2 id="plusComment">Add a comment ${idMeal}</h2>
             <div id="form">
             <input type="text" id="username" placeholder="Your name" />
             <input type="text" id="comment" placeholder="Add Your comment" />
             <button type="submit" id="submitBtn">Submit</button>
+            </div>
     `;
   modalDetailsContent.innerHTML = html;
   modalDetailsContent.parentElement.classList.add("showModal");
@@ -97,14 +98,16 @@ function mealInfoModal(meal) {
       .map(
         (items) => `
     <div class="left">
-<p class="eachScore">${items.username}</p>
+<p class="eachScore">${items.creation_date} 
+<span>${items.username}:
+</span> 
+</p>
 <span>
-<p class="numberSc"> ${items.comment}</p>
+<p class="numberSc">${items.comment}</p>
 </span>
 </div>`
       )
       .join(" ");
-    console.log(gege);
     commentsDisplay.innerHTML = gege;
     })
   };

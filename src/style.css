@@ -171,3 +171,47 @@ footer {
   align-items: center;
   margin: 0 7rem;
 }
+
+#commentsDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  display: flex;
+  margin: 0.25rem 0;
+}
+
+.left span {
+  margin-left: 1rem;
+}
+
+#commentTitle {
+  margin: 10px 0;
+}
+
+#plusComment {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  border: 1px solid blue;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#username {
+  width: 15rem;
+}
+
+#comment {
+  width: 25rem;
+  height: 4rem;
+}
+
+#submitBtn {
+  width: 4.5rem;
+}
