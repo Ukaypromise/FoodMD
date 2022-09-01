@@ -20,31 +20,29 @@ const addLike = async (id) => {
   });
   result();
 };
+// ***********************************************************************
 
-function getComments() {
-  fetch(`${url}/${KeyComment}/comments`)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    });
-}
+// Comment section
 
-function postComments(id, name, comment) {
-  fetch(`${url}/${KeyComment}/comments`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      item_id: id,
-      username: name,
-      comment: comment,
-    }),
+// get the comments
+const getComments = async (id) => {
+  const result = await fetch(`${url}${KeyComment}/comments?item_id=${id}`);
+  const dataResult = await result.json();
+  dataResult.forEach((data) => {
+    renderComments(data);
+    console.log(data);
   })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    });
 }
 
-export { getLikes, addLike, getComments, postComments };
+// render the comments on the page
+
+function renderComments(data) {
+  const content = document.querySelector(".show-comments");
+  content.innerHTML += `<p class="comm">${data.creation_date} - ${data.username} - ${data.comment}</p>`;
+}
+
+
+
+
+export { getLikes, addLike, getComments };
+

@@ -25,23 +25,21 @@ function mealInfoModal(meal) {
               </div>
             </div>
             <div class="comment">
-              <h3 class="modal-title">Comments</h3>
-              <div class="modal-title" id="comment-id>comment:</div>
+              <h3 class="modal-title">Comments</h3>             
             </div>
-            <div class="add-comment">
-              <h3>Add a comment</h3>
-              <input type="text" id="input-name">
-              <textarea name="comment" id="comment-text" cols="30" rows="2"></textarea>
-              <button class="comment-submit">Comment</button>
+            <div class="show-comments">Helooooo</div>
+            <div class="add-comment">            
+              <form action="#" class="form">
+                <h3>Add a comment</h3>
+                <input type="text" id="name" placeholder="Your name" />         
+                <textarea name="comment" id="comment-text" cols="30" rows="2" placeholder="Your comment"></textarea>
+                <button class="comment-submit" type="Submit" >Comment</button>
+              </form>
             </div>
     `;
   modalDetailsContent.innerHTML = html;
   modalDetailsContent.parentElement.classList.add('showModal');
 }
 
-// function renderComments(data) {
-//   const content = document.getElementById("comment-id");
-//   content.innerHTML += `<p class="comm">${data.username}: ${data.comment}</p>`;
-// }
 
 export default mealInfoModal;

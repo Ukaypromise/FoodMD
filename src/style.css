@@ -157,6 +157,12 @@ footer {
   text-align: center;
 }
 
+.show-comments {
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
 .modal-meal-img img {
   width: 100px;
   height: 100px;
