@@ -47,11 +47,10 @@ const displayFoods = () => {
     });
 };
 
-setTimeout (() => {
+setTimeout(() => {
   const total = mealCount();
   const counter = document.getElementById('mealC');
-  counter.innerHTML = `Meals ${total}`
+  counter.innerHTML = `Meals ${total}`;
 }, 2000);
-
 
 export default displayFoods;

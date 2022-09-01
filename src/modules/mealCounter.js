@@ -1,8 +1,8 @@
 // import getMealInfo from "./getMealinfo.js";
 
 const mealCount = () => {
-const count = document.querySelectorAll('.meal-item');
- return count.length;
+  const count = document.querySelectorAll('.meal-item');
+  return count.length;
 };
 
 export { mealCount };

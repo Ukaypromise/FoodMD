@@ -1,6 +1,6 @@
 // import displayFoods from './displayFoods.js';
 
-import displayFoods from "./displayFoods";
+import displayFoods from './displayFoods';
 
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
 const key = '4ZfW9Nw9KyQJZ8SztYPH';
