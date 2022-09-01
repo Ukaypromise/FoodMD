@@ -1,34 +1,34 @@
-import './style.css';
-import displayFoods from './modules/displayFoods.js';
-import { getComments } from './modules/involvement.js';
+import "./style.css";
+import displayFoods from "./modules/displayFoods.js";
+import { getComments } from "./modules/involvement.js";
 
 const url =
   "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/";
 const KeyComment = "CpkFU0gWCBmni5z8HJTQ";
 
- const userName = document.getElementById("input-name");
- const comment = document.getElementById("comment-text");
- const submit = document.querySelector(".comment-submit");
- 
+const userName = document.getElementById("input-name");
+const comment = document.getElementById("comment-text");
+const submit = document.querySelector(".comment-submit");
 
 displayFoods();
-getComments()
+getComments();
 
 // post the comments
-const postComment = async (id, name, comment) => {
-  const body = JSON.stringify({
-    item_id: id,
-    username: name,
-    comment: comment,
-  });
-  const headers = { 'Content-type': 'application/json; charset=UTF-8' };
+const postComment = async () => {
   const result = await fetch(`${url}${KeyComment}/comments`, {
     method: "POST",
-    body,
-    headers,
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8",
+    },
+    body: JSON.stringify({
+      item_id: id,
+      username: userName.value,
+      comment: comment.value,
+    }),
   });
+
   result();
-}
+};
 
 const clearInput = () => {
   userName.value = "";
@@ -41,4 +41,3 @@ submit.addEventListener("click", (e) => {
   clearInput();
   console.log("heloooo");
 });
-

@@ -28,10 +28,7 @@ const addLike = async (id) => {
 const getComments = async (id) => {
   const result = await fetch(`${url}${KeyComment}/comments?item_id=${id}`);
   const dataResult = await result.json();
-  dataResult.forEach((data) => {
-    renderComments(data);
-    console.log(data);
-  })
+  return dataResult;
 }
 
 // render the comments on the page
@@ -40,7 +37,6 @@ function renderComments(data) {
   const content = document.querySelector(".show-comments");
   content.innerHTML += `<p class="comm">${data.creation_date} - ${data.username} - ${data.comment}</p>`;
 }
-
 
 
 
