@@ -31,7 +31,7 @@ function mealInfoModal(meal) {
             </div>
             <h2 id="commentTitle">Comments</h2>
             <div id="commentsDisplay"></div>
-            <h2 id="plusComment">Add a comment ${idMeal}</h2>
+            <h2 id="plusComment">Add a comment</h2>
             <div id="form">
             <input type="text" id="username" placeholder="Your name" />
             <input type="text" id="comment" placeholder="Add Your comment" />
@@ -110,8 +110,10 @@ function mealInfoModal(meal) {
       .join(" ");
     commentsDisplay.innerHTML = gege;
     })
+    
   };
   myComments();
+  
 }
 
 export default mealInfoModal;
