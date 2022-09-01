@@ -13,8 +13,4 @@ describe ('Counters', () => {
     expect(mealCount(count)).toBe(1);
   });
 
-  it ('suma', () => {
-    expect(5).toBe(5);
-  });
-
 })
