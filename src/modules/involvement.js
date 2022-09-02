@@ -1,4 +1,6 @@
-import displayFoods from './displayFoods.js';
+/* eslint-disable */
+import displayFoods from "./displayFoods.js";
+/* eslint-enable */
 
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
 const key = '4ZfW9Nw9KyQJZ8SztYPH';

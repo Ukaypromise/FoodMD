@@ -1,6 +1,7 @@
+/* eslint-disable */
 import { addLike } from './involvement.js';
 import mealInfoModal from './mealInfoModal.js';
-
+/* eslint-enable */
 const modalDetailsContent = document.querySelector('.modal-details-content');
 const recipeCloseBtn = document.getElementById('modal-close-btn');
 

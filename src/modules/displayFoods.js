@@ -1,5 +1,7 @@
-import getMealInfo from './getMealinfo.js';
-import { getLikes } from './involvement.js';
+/* eslint-disable */
+import getMealInfo from "./getMealinfo.js";
+import { getLikes } from "./involvement.js";
+/* eslint-enable */
 import mealCount from './mealCounter.js';
 
 const foodItemsDiv = document.getElementById('food-items');

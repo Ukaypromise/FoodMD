@@ -1,8 +1,10 @@
-import commentCount from './commentCounter.js';
+/* eslint-disable */
+import commentCount from "./commentCounter.js";
 
-const modalDetailsContent = document.querySelector('.modal-details-content');
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
-const key = '4ZfW9Nw9KyQJZ8SztYPH';
+const modalDetailsContent = document.querySelector(".modal-details-content");
+const url =
+  "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/";
+const key = "4ZfW9Nw9KyQJZ8SztYPH";
 
 function mealInfoModal(meal) {
   const {
@@ -40,21 +42,21 @@ function mealInfoModal(meal) {
             </div>
     `;
   modalDetailsContent.innerHTML = html;
-  modalDetailsContent.parentElement.classList.add('showModal');
-  const submitBtn = document.getElementById('submitBtn');
+  modalDetailsContent.parentElement.classList.add("showModal");
+  const submitBtn = document.getElementById("submitBtn");
 
-  submitBtn.addEventListener('click', () => {
+  submitBtn.addEventListener("click", () => {
     const item_id = idMeal;
-    const usernameInput = document.getElementById('username');
-    const commentInput = document.getElementById('comment');
+    const usernameInput = document.getElementById("username");
+    const commentInput = document.getElementById("comment");
     const username = usernameInput.value;
     const comment = commentInput.value;
     const dataToSend = JSON.stringify({ item_id, username, comment });
-    async function postData(url = '', data = {}) {
+    async function postData(url = "", data = {}) {
       const response = await fetch(url, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-type': 'application/json; charset=UTF-8',
+          "Content-type": "application/json; charset=UTF-8",
         },
         body: data,
       });
@@ -70,24 +72,24 @@ function mealInfoModal(meal) {
       .catch((err) => {
         err.err();
       });
-    usernameInput.value = '';
-    commentInput.value = '';
+    usernameInput.value = "";
+    commentInput.value = "";
   });
 
-  async function getData(url = '') {
+  async function getData(url = "") {
     const response = await fetch(url, {
-      method: 'GET',
-      mode: 'cors',
-      cache: 'no-cache',
-      credentials: 'same-origin',
-      redirect: 'follow',
-      referrerPolicy: 'no-referrer',
+      method: "GET",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
     });
 
     return response;
   }
 
-  const commentsDisplay = document.getElementById('commentsDisplay');
+  const commentsDisplay = document.getElementById("commentsDisplay");
 
   const myComments = () => {
     getData(`${url}${key}/comments?item_id=${idMeal}`)
@@ -107,16 +109,16 @@ function mealInfoModal(meal) {
       <span>
       <p class="numberSc">${items.comment}</p>
       </span>
-      </div>`,
+      </div>`
           )
-          .join(' ');
+          .join(" ");
         commentsDisplay.innerHTML = gege;
       });
   };
   myComments();
   setTimeout(() => {
     const total = commentCount();
-    const counter = document.getElementById('commentTitle');
+    const counter = document.getElementById("commentTitle");
     counter.innerHTML = `Comments (${total})`;
   }, 2000);
 }
