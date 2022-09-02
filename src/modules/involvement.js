@@ -14,12 +14,14 @@ const getLikes = async () => {
 const addLike = async (id) => {
   const body = JSON.stringify({ item_id: id });
   const headers = { 'Content-type': 'application/json; charset=UTF-8' };
+  /* eslint-disable */
   const result = await fetch(`${url}${key}/likes`, {
+    /* eslint-enable */
     method: 'POST',
     body,
     headers,
   });
-  result();
+  // result();
   // console.log(result);
   displayFoods();
 };

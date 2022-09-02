@@ -34,7 +34,7 @@ const displayFoods = () => {
         </div>
         <div class = 'involvement'> 
         <p>Show me how much you....<p>
-        <a>${pickLikes}  <i class='fa-regular fa-heart' id='like-${meal.idMeal}'>  Like</i></a>
+        <a>${pickLikes}  <i class='fa-regular fa-heart' id='like-${meal.idMeal}'></i>  Like</a>
         </div>
         <div class = 'meal-name'>
           <p>${meal.strMeal}</p>
