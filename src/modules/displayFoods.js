@@ -1,6 +1,6 @@
 import getMealInfo from './getMealinfo.js';
 import { getLikes } from './involvement.js';
-import { mealCount } from './mealCounter.js';
+import mealCount from './mealCounter.js';
 
 const foodItemsDiv = document.getElementById('food-items');
 // const usrlikes = document.getElementById('likes');

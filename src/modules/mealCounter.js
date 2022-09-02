@@ -2,8 +2,7 @@
 
 const mealCount = () => {
   const count = document.querySelectorAll('.meal-item');
-  console.log(count);
   return count.length;
 };
 
-export { mealCount };
+export default mealCount;

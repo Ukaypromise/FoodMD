@@ -1,9 +1,6 @@
 const commentCount = () => {
- 
-  const count = document.querySelectorAll(".left");
-;
-  console.log(count);
+  const count = document.querySelectorAll('.left');
   return count.length;
 };
 
-export { commentCount };
+export default commentCount;
