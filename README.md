@@ -19,7 +19,10 @@ None
 
 ## Live Demo 
 
-[Live Demo Link](https://capable-tarsier-080db1.netlify.app/))
+[Live Demo Link](https://capable-tarsier-080db1.netlify.app/)
+
+## Demo Video from Authors
+[Video](https://drive.google.com/file/d/1A7BDcPe5crGGqIxkneWKVb0rq3Cw2CRG/view?usp=sharing)
 
 ## Getting Started
 
