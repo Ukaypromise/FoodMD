@@ -19,7 +19,7 @@ None
 
 ## Live Demo 
 
-[Live Demo Link](https://livedemo.com](https://capable-tarsier-080db1.netlify.app/))
+[Live Demo Link](https://capable-tarsier-080db1.netlify.app/))
 
 ## Getting Started
 
