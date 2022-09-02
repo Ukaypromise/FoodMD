@@ -22,7 +22,7 @@ None
 [Live Demo Link](https://capable-tarsier-080db1.netlify.app/)
 
 ## Demo Video from Authors
-[Video](https://drive.google.com/file/d/1A7BDcPe5crGGqIxkneWKVb0rq3Cw2CRG/view?usp=sharing)
+[Video](https://drive.google.com/file/d/1o96nrqoln5oXBvZGj4MNjsL568RttbTh/view?usp=sharing)
 
 ## Getting Started
 
