@@ -5,4 +5,4 @@ const mealCount = () => {
   return count.length;
 };
 
-export { mealCount };
+export default mealCount;

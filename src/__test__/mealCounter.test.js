@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import { mealCount } from '../modules/mealCounter.js';
+import mealCount from '../modules/mealCounter.js';
 
 describe('Counters', () => {
   it('Comments counters', () => {
