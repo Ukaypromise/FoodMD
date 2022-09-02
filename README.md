@@ -67,9 +67,9 @@ npm start
 - LinkedIn: [@promiseuka](https://www.linkedin.com/in/promiseuka)
 
 👤 **Federico Luna**
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Flunavgt](https://github.com/Flunavgt)
+- Twitter: [@flunavgt](https://twitter.com/flunavgt)
+- LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
 
 ## 🤝 Contributing
 
