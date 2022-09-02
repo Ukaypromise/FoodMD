@@ -74,6 +74,8 @@ function mealInfoModal(meal) {
       });
     usernameInput.value = "";
     commentInput.value = "";
+    location.reload();
+    
   });
 
   async function getData(url = "") {
