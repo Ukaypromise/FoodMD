@@ -21,8 +21,6 @@ const addLike = async (id) => {
     body,
     headers,
   });
-  // result();
-  // console.log(result);
   displayFoods();
 };
 

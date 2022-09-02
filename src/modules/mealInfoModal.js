@@ -74,7 +74,10 @@ function mealInfoModal(meal) {
       });
     usernameInput.value = "";
     commentInput.value = "";
-    location.reload();
+    setTimeout(() => {
+      mealInfoModal(meal);
+    }, 1500);
+    
     
   });
 
@@ -109,7 +112,7 @@ function mealInfoModal(meal) {
       </span> 
       </p>
       <span>
-      <p class="numberSc">${items.comment}</p>
+      <p class="numberSc" id="comreload">${items.comment}</p>
       </span>
       </div>`
           )
@@ -118,6 +121,7 @@ function mealInfoModal(meal) {
       });
   };
   myComments();
+  
   setTimeout(() => {
     const total = commentCount();
     const counter = document.getElementById("commentTitle");
