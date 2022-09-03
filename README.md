@@ -58,7 +58,7 @@ npx stylelint "**/*.{css,scss}"
 Run the following command 
 
 `
-npm ruin build
+npm run build
 `
 then
 `
